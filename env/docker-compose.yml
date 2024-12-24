@@ -1,0 +1,19 @@
+version: '3.7'
+
+networks:
+  default:
+    name: env_default
+
+services:
+  cat-diary-postgres:
+    image: postgres:15
+    ports:
+      - "25432:5432"
+    environment:
+      TZ: Asia/Seoul
+      POSTGRES_DB: cat_diary
+      POSTGRES_USER: yongcheol
+      POSTGRES_PASSWORD: yongcheol
+      POSTGRES_INITDB_COLLATION: C
+    volumes:
+      - ./cat_food.sql:/docker-entrypoint-initdb.d/cat_food.sql

@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-cth69t1u0jms7380an0g-a.singapore-postgres.render.com:5432/cat_diary # PostgreSQL URL (포트 및 DB 이름 수정)
+    driver-class-name: org.postgresql.Driver
+    username: yongcheol # PostgreSQL 사용자 이름
+    password: Geb5igcszRpdtdmoNzStkcWwie0D0YO5 # PostgreSQL 비밀번호
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect # PostgreSQL Dialect 설정
+      ddl-auto: update # 데이터베이스 스키마 자동 업데이트 설정
+    show-sql: true # 실행되는 SQL 쿼리를 로그에 출력
+    properties:
+      hibernate.format_sql: true # SQL 포맷팅
+      hibernate.use_sql_comments: true # SQL 주석 사용
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  thymeleaf:
+    enabled: false
+  resources:
+    static-locations: classpath:/static/   # 정적 리소스 경로 설정
+  jsp:
+    enabled: true  # JSP 사용 설정
+    prefix: /WEB-INF/jsp/  # JSP 파일이 위치할 경로
+    suffix: .jsp           # JSP 확장자
+
+logging:
+  level:
+    org.springframework: INFO # Spring 관련 로그 레벨
+    com.neighbor: DEBUG # 프로젝트 패키지에 대한 로그 레벨
+    org.springframework.security: DEBUG
+
+server:
+  port: 8088 # 서버 포트 설정 (기본값: 8088)
+  tomcat:
+    uri-encoding: UTF-8

@@ -1,0 +1,35 @@
+GET http://localhost:8088/diary/waterIntake?catId=1&date=2024-12-23
+Content-Type: application/json
+
+###
+GET http://localhost:8080/qna/10
+Content-Type: application/json
+
+###
+POST http://localhost:8088/waterIntake/insert
+Content-Type: application/json
+
+{
+  "catId": 1,
+  "date": "2024-12-24",
+  "amount": 220.4,
+  "unit": "g"
+}
+
+###
+POST http://localhost:8080/admin/qna/1
+Content-Type: application/json
+
+{
+  "ttl": "다시 자료 제목",
+  "cn": "수정된 자료 내용",
+  "ctgrCd": "category1",
+  "atchFileId": "updatedFile123",
+  "bgngDt": "2024-12-01T09:00:00",
+  "endDt": "2024-12-31T18:00:00"
+}
+
+###
+POST http://localhost:8080/qna/1/delete
+Content-Type: application/json
+
