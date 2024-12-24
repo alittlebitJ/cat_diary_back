@@ -1,0 +1,246 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# .gitignore 파일 내용 추가
+echo "node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.next-env.d.ts
+
+# Production
+build/
+
+# Miscellaneous
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Next.js build output
+.next/
+out/
+
+
+# Next.js type generation
+.next-env.d.ts
+
+# MacOS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Spring Boot
+target/
+*.jar
+*.war
+*.ear
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+*.swp
+*~
+.project
+.classpath
+.idea/
+.cache
+.project
+.settings
+*.launch
+*.metadata
+*.bak
+*.tmp
+*.log
+*.lock
+*.goutputstream-*
+/workspace.xml
+/spring.xml
+deployment/
+.loader/node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+frontend/.next/
+frontend/out/
+*.log
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/.next-env.d.ts
+
+# Production
+frontend/build/
+
+# Miscellaneous
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Next.js build output
+.next/
+out/
+
+# Next.js type generation
+.next-env.d.ts
+
+# MacOS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Spring Boot
+target/
+*.jar
+*.war
+*.ear
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+*.swp
+*~
+.project
+.classpath
+.idea/
+.cache
+.project
+.settings
+*.launch
+*.metadata
+*.bak
+*.tmp
+*.log
+*.lock
+*.goutputstream-*
+/workspace.xml
+/spring.xml
+deployment/
+.loader/
