@@ -3,16 +3,18 @@ package com.cat_diary.cat_diary.feed.dto;
 import java.math.BigDecimal;
 
 public class FeedDto {
-  private Integer id;
-  private String name;
-  private BigDecimal caloriePerGram;
-  private BigDecimal caloriesPerUnit; // 새로운 필드 추가
 
-  // 생성자
-  public FeedDto(Integer id, String name, BigDecimal caloriePerGram, BigDecimal caloriesPerUnit) {
+  private Integer id;
+  private String type;
+  private String name;
+  private BigDecimal caloriesPerGram;
+  private BigDecimal caloriesPerUnit;
+
+  public FeedDto(Integer id, String type, String name, BigDecimal caloriesPerGram, BigDecimal caloriesPerUnit) {
     this.id = id;
+    this.type = type;
     this.name = name;
-    this.caloriePerGram = caloriePerGram;
+    this.caloriesPerGram = caloriesPerGram;
     this.caloriesPerUnit = caloriesPerUnit;
   }
 
@@ -25,6 +27,14 @@ public class FeedDto {
     this.id = id;
   }
 
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
   public String getName() {
     return name;
   }
@@ -33,12 +43,12 @@ public class FeedDto {
     this.name = name;
   }
 
-  public BigDecimal getCaloriePerGram() {
-    return caloriePerGram;
+  public BigDecimal getCaloriesPerGram() {
+    return caloriesPerGram;
   }
 
-  public void setCaloriePerGram(BigDecimal caloriePerGram) {
-    this.caloriePerGram = caloriePerGram;
+  public void setCaloriesPerGram(BigDecimal caloriesPerGram) {
+    this.caloriesPerGram = caloriesPerGram;
   }
 
   public BigDecimal getCaloriesPerUnit() {

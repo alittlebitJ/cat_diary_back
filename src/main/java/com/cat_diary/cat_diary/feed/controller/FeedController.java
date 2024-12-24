@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("/feed")
 public class FeedController {
 
   private final FeedService service;
@@ -20,9 +21,16 @@ public class FeedController {
     this.service = service;
   }
 
-  @GetMapping("/feed/nutrition")
+  // 전체 조회
+  @GetMapping("/nutrition")
   public List<FeedDto> getCatFoods() {
     return service.getAllCatFoods();
+  }
+
+  // 카테고리별 조회
+  @GetMapping("/nutrition/category")
+  public List<FeedDto> getCatFoodsByCategory(@RequestParam("type") String type) {
+    return service.getCatFoodsByCategory(type);
   }
 
 }

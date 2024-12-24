@@ -10,4 +10,7 @@ import java.util.List;
 @Repository
 public interface FeedRepository extends JpaRepository<Feed, Integer> {
   List<FeedDto> findAllByOrderByNameAsc();
+
+  // type을 기준으로 데이터를 조회하는 메서드
+  List<Feed> findByType(String type);
 }

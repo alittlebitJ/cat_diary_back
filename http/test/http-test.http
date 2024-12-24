@@ -1,4 +1,4 @@
-GET http://localhost:8088/diary/waterIntake?catId=1&date=2024-12-23
+GET http://localhost:8088/feed/nutrition/category?type=간식
 Content-Type: application/json
 
 ###

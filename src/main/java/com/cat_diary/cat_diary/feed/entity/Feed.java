@@ -1,12 +1,19 @@
 package com.cat_diary.cat_diary.feed.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "cat_food_and_treats")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Feed {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
@@ -15,41 +22,15 @@ public class Feed {
   private String name;
 
   @Column(name = "calories_per_gram")
-  private BigDecimal caloriePerGram;
+  private BigDecimal caloriesPerGram;
 
   @Column(name = "calories_per_unit")
   private BigDecimal caloriesPerUnit;
 
-  // Getter & Setter
-  public Integer getId() {
-    return id;
-  }
+  @Column(name = "type")
+  private String type;  // 주식/간식 타입
 
-  public void setId(Integer id) {
-    this.id = id;
-  }
+  @Column(name = "food_type")
+  private String foodType;  // 건식/캔 등
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public BigDecimal getCaloriePerGram() {
-    return caloriePerGram;
-  }
-
-  public void setCaloriePerGram(BigDecimal caloriePerGram) {
-    this.caloriePerGram = caloriePerGram;
-  }
-
-  public BigDecimal getCaloriesPerUnit() {
-    return caloriesPerUnit;
-  }
-
-  public void setCaloriesPerUnit(BigDecimal caloriesPerUnit) {
-    this.caloriesPerUnit = caloriesPerUnit;
-  }
 }
