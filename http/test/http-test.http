@@ -6,15 +6,34 @@ GET http://localhost:8080/qna/10
 Content-Type: application/json
 
 ###
-POST http://localhost:8088/waterIntake/insert
+POST http://localhost:8088/feed/meals
 Content-Type: application/json
 
-{
-  "catId": 1,
-  "date": "2024-12-24",
-  "amount": 220.4,
-  "unit": "g"
-}
+[
+  {
+    "catId": 1,
+    "date": "2024-12-25",
+    "foodName": "참치캔",
+    "amount": 100.00,
+    "category": "주식",
+    "productType": "캔",
+    "calories": 150.00,
+    "feedingTime": "08:00:00",
+    "notes": "아침 급여"
+  },
+  {
+    "catId": 1,
+    "date": "2024-12-25",
+    "foodName": "츄르",
+    "amount": 50.00,
+    "category": "간식",
+    "productType": "츄르",
+    "calories": 80.00,
+    "feedingTime": "14:00:00",
+    "notes": "간식"
+  }
+]
+
 
 ###
 POST http://localhost:8080/admin/qna/1

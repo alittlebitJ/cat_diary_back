@@ -13,4 +13,7 @@ public interface FeedRepository extends JpaRepository<Feed, Integer> {
 
   // type을 기준으로 데이터를 조회하는 메서드
   List<Feed> findByType(String type);
+
+  // 이름으로 상품 검색
+  List<Feed> findByNameContainingIgnoreCase(String name);
 }

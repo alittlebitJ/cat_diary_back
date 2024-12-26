@@ -6,13 +6,15 @@ public class FeedDto {
 
   private Integer id;
   private String type;
+  private String foodType;
   private String name;
   private BigDecimal caloriesPerGram;
   private BigDecimal caloriesPerUnit;
 
-  public FeedDto(Integer id, String type, String name, BigDecimal caloriesPerGram, BigDecimal caloriesPerUnit) {
+  public FeedDto(Integer id, String type, String foodType, String name, BigDecimal caloriesPerGram, BigDecimal caloriesPerUnit) {
     this.id = id;
     this.type = type;
+    this.foodType = foodType;
     this.name = name;
     this.caloriesPerGram = caloriesPerGram;
     this.caloriesPerUnit = caloriesPerUnit;
@@ -33,6 +35,14 @@ public class FeedDto {
 
   public void setType(String type) {
     this.type = type;
+  }
+
+  public String getFoodType() {
+    return foodType;
+  }
+
+  public void setFoodType(String foodType) {
+    this.foodType = foodType;
   }
 
   public String getName() {
