@@ -54,9 +54,6 @@ public class FeedService {
   public void addMealRecords(List<MealDto> mealDtoList) {
     for (MealDto mealDto : mealDtoList) {
 
-      // 날짜 변환: String에서 LocalDate로 변환
-      LocalDate date = mealDto.getDate() != null ? LocalDate.parse(mealDto.getDate()) : null;
-
       // amount와 calories는 Double에서 BigDecimal로 변환
       BigDecimal amount = mealDto.getAmount() != null ? BigDecimal.valueOf(mealDto.getAmount()) : null;
       BigDecimal calories = mealDto.getCalories() != null ? BigDecimal.valueOf(mealDto.getCalories()) : null;
@@ -66,8 +63,8 @@ public class FeedService {
 
       // Meal entity 생성
       Meal meal = Meal.builder()
-        .catId(Math.toIntExact(mealDto.getCatId()))
-        .date(date)
+        .catId(mealDto.getCatId())
+        .date(mealDto.getDate())
         .foodName(mealDto.getFoodName())
         .amount(amount)
         .category(mealDto.getCategory())

@@ -1,9 +1,13 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cth69t1u0jms7380an0g-a.singapore-postgres.render.com:5432/cat_diary # PostgreSQL URL (포트 및 DB 이름 수정)
+#    url: jdbc:postgresql://dpg-cth69t1u0jms7380an0g-a.singapore-postgres.render.com:5432/cat_diary # PostgreSQL URL (포트 및 DB 이름 수정)
+#    driver-class-name: org.postgresql.Driver
+#    username: yongcheol # PostgreSQL 사용자 이름
+#    password: Geb5igcszRpdtdmoNzStkcWwie0D0YO5 # PostgreSQL 비밀번호
+    url: jdbc:postgresql://localhost:5432/postgres # PostgreSQL URL (포트 및 DB 이름 수정)
     driver-class-name: org.postgresql.Driver
-    username: yongcheol # PostgreSQL 사용자 이름
-    password: Geb5igcszRpdtdmoNzStkcWwie0D0YO5 # PostgreSQL 비밀번호
+    username: postgres # PostgreSQL 사용자 이름
+    password: yongcheol # PostgreSQL 비밀번호
 
   jpa:
     hibernate:

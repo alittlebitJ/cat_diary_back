@@ -22,6 +22,7 @@ public class FeedController {
     this.service = service;
   }
 
+  // 섭취 제품 조회
   // 전체 조회
   @GetMapping("/nutrition")
   public List<FeedDto> getCatFoods() {
@@ -40,12 +41,15 @@ public class FeedController {
     return service.searchCatFoodsByName(query);
   }
 
+  // 급여기록
   // 급여내역 등록
   @PostMapping("/meals")
   public String addMealRecords(@RequestBody List<MealDto> mealDtoList) {
     service.addMealRecords(mealDtoList);
     return "급여내역이 성공적으로 등록되었습니다.";
   }
+  
+  
 
 }
 

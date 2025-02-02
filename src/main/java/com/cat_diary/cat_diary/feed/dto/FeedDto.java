@@ -4,14 +4,14 @@ import java.math.BigDecimal;
 
 public class FeedDto {
 
-  private Integer id;
+  private Long id;
   private String type;
   private String foodType;
   private String name;
   private BigDecimal caloriesPerGram;
   private BigDecimal caloriesPerUnit;
 
-  public FeedDto(Integer id, String type, String foodType, String name, BigDecimal caloriesPerGram, BigDecimal caloriesPerUnit) {
+  public FeedDto(Long id, String type, String foodType, String name, BigDecimal caloriesPerGram, BigDecimal caloriesPerUnit) {
     this.id = id;
     this.type = type;
     this.foodType = foodType;
@@ -21,11 +21,11 @@ public class FeedDto {
   }
 
   // Getter & Setter
-  public Integer getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(Long id) {
     this.id = id;
   }
 

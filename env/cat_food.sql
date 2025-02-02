@@ -529,3 +529,34 @@ INSERT INTO cat_food_and_treats (
              '레오나르도 캣 순수생육 오리', '주식', '건식', '2024-12-24', 42075, 1500, 4120, 4.12, '바잇미', 40.0, 22.0, 7.0, 2.5, 0.9, 1.0, 10.0, 0.0
          );
 
+INSERT INTO cat_food_and_treats (
+    name, type, food_type, purchase_date, purchase_price, weight, calories_per_unit,
+    calories_per_gram, supplier, crude_protein, crude_fat, ash, crude_fiber,
+    phosphorus, calcium, moisture, sodium
+) VALUES (
+             '레오나르도 캣 푸드 키튼', '주식', '건식', '2024-12-08', 36000, 1800, 4100, 4.1, '팻프렌즈', 34.0, 22.0, 8.5, 1.5, 0.94, 1.3, 10.0, 0.0
+         );
+
+INSERT INTO cat_food_and_treats (
+     name, type, food_type, purchase_date, purchase_price, weight, calories_per_unit,
+     calories_per_gram, supplier, crude_protein, crude_fat, ash, crude_fiber,
+     phosphorus, calcium, moisture, sodium
+) VALUES (
+            '로우즈 밀프리 칠면조&치킨', '주식', '건식', '2024-12-08', 39000, 794, 3710, 4.67, '펫프렌즈', 40.0, 12.0, 9.0, 4.0, 1.0, 1.5, 10.0, 0.0
+         );
+
+INSERT INTO cat_food_and_treats (
+    name, type, food_type, purchase_date, purchase_price, weight, calories_per_unit,
+    calories_per_gram, supplier, crude_protein, crude_fat, ash, crude_fiber,
+    phosphorus, calcium, moisture, sodium
+) VALUES (
+             '템테이션 캣 트릿 헤어볼 컨트롤 130g', '간식', '스낵', '2025-01-21', 6800, 130, 2, 0.0, '펫프렌즈', 30.0, 17.0, 12.0, 8.0, 0.6, 0.5, 12.0, 0.0
+         );
+
+INSERT INTO cat_food_and_treats (
+    name, type, food_type, purchase_date, purchase_price, weight, calories_per_unit,
+    calories_per_gram, supplier, crude_protein, crude_fat, ash, crude_fiber,
+    phosphorus, calcium, moisture, sodium
+) VALUES (
+             '닥터펠리스 포캣트릿 닭가슴살', '간식', '트릿', '2025-01-21', 4900, 25, 1, 0.0, '닥터펠리스', 67.54, 5.9, 6.92, 0.0, 0.0, 0.0, 7.56, 0.0
+         );

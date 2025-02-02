@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface FeedRepository extends JpaRepository<Feed, Integer> {
+public interface FeedRepository extends JpaRepository<Feed, Long> {
   List<FeedDto> findAllByOrderByNameAsc();
 
   // type을 기준으로 데이터를 조회하는 메서드

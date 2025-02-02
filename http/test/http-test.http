@@ -2,7 +2,7 @@ GET http://localhost:8088/feed/nutrition/category?type=간식
 Content-Type: application/json
 
 ###
-GET http://localhost:8080/qna/10
+GET http://localhost:8088/diary/waterIntake/7days?catId=1&date=2024-12-29
 Content-Type: application/json
 
 ###

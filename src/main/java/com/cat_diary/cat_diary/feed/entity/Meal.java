@@ -18,10 +18,10 @@ public class Meal {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Integer mealId;
+  private Long mealId;
 
   @Column(name = "cat_id")
-  private Integer catId;
+  private Long catId;
 
   @Column(name = "date")
   private LocalDate date;
